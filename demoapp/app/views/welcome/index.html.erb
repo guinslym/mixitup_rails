@@ -1,0 +1,48 @@
+
+<div class="controls">
+  <label>Filter:</label>
+  
+  <select id="FilterSelect">
+    <option value="all">All</option>
+    <option value=".category-1">Category 1</option>
+    <option value=".category-2">Category 2</option>
+  </select>
+  
+  <label>Sort:</label>
+  
+  <select id="SortSelect">
+    <option value="myorder:asc">Asc</option>
+    <option value="myorder:desc">Desc</option>
+  </select>
+</div>
+<div id="Container" class="container">
+  <div class="mix category-1" data-myorder="1"></div>
+  <div class="mix category-1" data-myorder="2"></div>
+  <div class="mix category-1" data-myorder="3"></div>
+  <div class="mix category-2" data-myorder="4"></div>
+  <div class="mix category-1" data-myorder="5"></div>
+  <div class="mix category-1" data-myorder="6"></div>
+  <div class="mix category-2" data-myorder="7"></div>
+  <div class="mix category-2" data-myorder="8"></div>
+  
+  <div class="gap"></div>
+  <div class="gap"></div>
+</div>
+
+<script type="text/javascript">
+  $(function(){
+  var $filterSelect = $('#FilterSelect'),
+      $sortSelect = $('#SortSelect'),
+      $container = $('#Container');
+  
+  $container.mixItUp();
+  
+  $filterSelect.on('change', function(){
+    $container.mixItUp('filter', this.value);
+  });
+  
+  $sortSelect.on('change', function(){
+    $container.mixItUp('sort', this.value);
+  });
+});
+</script>

@@ -28,8 +28,11 @@ add in `app/assets/javascripts/application.js` after jquery (below jquery)
     $('#Container').mixItUp(); // an instance now exists in the session memory
 ```
 
+###Demoapp
+open the folder demoapp to view an example of mixitup app.
 
-####Issues with turbolink
+
+####Issues you may find with turbolink
 [mixitup-rails-turbolinks](http://www.asithadesilva.com/mixitup-rails-turbolinks/) and [github issues' page link](https://github.com/patrickkunka/mixitup/issues/111)
 
 ```javascript
