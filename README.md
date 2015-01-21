@@ -25,14 +25,24 @@ add in `app/assets/javascripts/application.js` after jquery (below jquery)
 	//= require mixitup
 
 ```javascript
-$(function(){ // on first doc ready we instantiate mixitup
     $('#Container').mixItUp(); // an instance now exists in the session memory
-};
 ```
 
 
-####Issues
-[With turbolink](https://github.com/patrickkunka/mixitup/issues/111)
+####Issues with turbolink
+[mixitup-rails-turbolinks](http://www.asithadesilva.com/mixitup-rails-turbolinks/) and [With turbolink](https://github.com/patrickkunka/mixitup/issues/111)
+
+```javascript
+$(function(){ // on first doc ready we instantiate mixitup
+    $('#container').mixItUp(); // an instance now exists in the session memory
+});
+$(window).on('page:before-change', function(){ 
+    $('#container').mixItUp('destroy'); // destroy the instance
+});
+$(window).on('page:load', function(){
+    $('#container').mixItUp(); // We can now reinstantiate without being blocked
+});
+```
 
 ## Contributing
 
