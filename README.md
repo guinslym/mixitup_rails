@@ -30,11 +30,13 @@ add in `app/assets/javascripts/application.js` after jquery (below jquery)
 
 ###Demoapp
 open the folder `demoapp` to view an example of mixitup app.
+```
 		$ git clone git@github.com:guinslym/mixitup_rails.git
 		$ cd mixitup_rails/demoapp
 		$ bundle install
 		$ rails s
 		$ open your browser at [http://localhost:3000/welcome/index](http://localhost:3000/welcome/index)
+```
 
 
 ####Issues you may find with turbolink
