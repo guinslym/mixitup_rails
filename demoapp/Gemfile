@@ -37,5 +37,5 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-gem 'mixitup_rails', :git => 'git@github.com:guinslym/mixitup_rails.git'
+gem 'mixitup_rails'
 

@@ -1,9 +1,3 @@
-GIT
-  remote: git@github.com:guinslym/mixitup_rails.git
-  revision: 07ca459956ad36c9532888a1a3ff634e08683c19
-  specs:
-    mixitup_rails (0.0.3)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -58,6 +52,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     minitest (5.5.1)
+    mixitup_rails (0.0.3)
     multi_json (1.10.1)
     polyglot (0.3.5)
     rack (1.5.2)
@@ -122,7 +117,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)
   jquery-rails
-  mixitup_rails!
+  mixitup_rails
   rails (= 4.1.5)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
