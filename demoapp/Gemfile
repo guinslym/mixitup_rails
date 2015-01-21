@@ -39,3 +39,10 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 gem 'mixitup_rails'
 
+# my other gems
+gem 'bereshit'#Torah lorem ipsum
+gem 'ui_faces'#uifaces api
+gem 'pagejs_rails'#page.js routes
+gem 'okzoom_rails'#zoom
+gem 'smokejs_rails'#alerts
+
