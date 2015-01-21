@@ -35,7 +35,7 @@ open the folder `demoapp` to view an example of mixitup app.
 		$ cd mixitup_rails/demoapp
 		$ bundle install
 		$ rails s
-		$ open your browser at [http://localhost:3000/welcome/index](http://localhost:3000/welcome/index)
+		#open your browser at http://localhost:3000/welcome/index
 ```
 
 
